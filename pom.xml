@@ -47,30 +47,16 @@
 				<configuration>
 					<options>
 						<option>--add-opens</option>
-						<option>javafx.graphics/javafx.css=ALL-UNNAMED</option>
-						<option>--add-opens</option>
-						<option>javafx.base/com.sun.javafx.runtime=ALL-UNNAMED</option>
-						<option>--add-opens</option>
-						<option>javafx.controls/com.sun.javafx.scene.control.behavior=ALL-UNNAMED</option>
-						<option>--add-opens</option>
-						<option>javafx.controls/com.sun.javafx.scene.control=ALL-UNNAMED</option>
-						<option>--add-opens</option>
-						<option>javafx.base/com.sun.javafx.binding=ALL-UNNAMED</option>
-						<option>--add-opens</option>
-						<option>javafx.base/com.sun.javafx.event=ALL-UNNAMED</option>
-						<option>--add-opens</option>
-						<option>javafx.graphics/com.sun.javafx.stage=ALL-UNNAMED</option>
-						<option>--add-exports</option>
-						<option>javafx.controls/com.sun.javafx.scene.control.behavior=com.jfoenix</option>
-						<option>--add-exports</option>
-						<option>javafx.controls/com.sun.javafx.scene.control=com.jfoenix</option>
-						<option>--add-exports</option>
-						<option>javafx.base/com.sun.javafx.binding=com.jfoenix</option>
-						<option>--add-exports</option>
-						<option>javafx.graphics/com.sun.javafx.stage=com.jfoenix</option>
-						<option>--add-exports</option>
-						<option>javafx.base/com.sun.javafx.event=com.jfoenix</option>
+						<option>java.base/java.lang.reflect=com.jfoenix</option>
 					</options>
+					<stripDebug>true</stripDebug>
+					<compress>2</compress>
+					<noHeaderFiles>true</noHeaderFiles>
+					<noManPages>true</noManPages>
+					<launcher>App</launcher>
+					<!-- <jlinkExecutable>App</jlinkExecutable> -->
+					<jlinkImageName>App</jlinkImageName>
+					<jlinkZipName>App</jlinkZipName>
 					<mainClass>br.com.rruffer.library.App</mainClass>
 				</configuration>
 			</plugin>
